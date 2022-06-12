@@ -13,15 +13,22 @@ Meta y propósitos:
 **¡Ánimo!**
 
 # Table of Contents
+
 1. [Specs](#spec)
 1. [Useful commands](#useful-commands)
 2. [Setup](#setup)
+
+**Note**: it's recommended to read the [Django tutorial](https://docs.djangoproject.com/en/4.0/intro/tutorial01/) if you're not familiar with the Django framework.
 
 ## Specs
 
 - Web framework: Django
 - Database: SQLite 3
 - API: [cheapshark.com](https://apidocs.cheapshark.com/)
+
+The project `steam_api` handles all commands while `games` is the app that contains all business logic that interacts with the Steam API.
+
+Here's a picture of the high-level architecture diagramme:
 
 ![Architecture diagramme](https://i.ibb.co/DR68Dj8/Screen-Shot-2022-06-13-at-11-05-50-AM.png)
 
