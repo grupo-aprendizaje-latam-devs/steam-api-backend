@@ -1,6 +1,6 @@
 # Proyecto del grupo de aprendizaje 1 (Steam API)
 
-🌱 Éste proyecto apenas está en comienzo. Todavía no hemos decidido el tema.
+🌱 Éste proyecto apenas está en comienzo. El tema: Sitio web para implementar un API que muestra datos sobre juegos de Steam
 
 Meta y propósitos:
 
