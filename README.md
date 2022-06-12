@@ -12,6 +12,11 @@ Meta y propósitos:
 
 **¡Ánimo!**
 
+# Table of Contents
+1. [Specs](#spec)
+1. [Useful commands](#useful-commands)
+2. [Setup](#setup)
+
 ## Specs
 
 - Web framework: Django
@@ -43,3 +48,17 @@ python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
+
+2) Create/migrate the database
+
+```shell
+python manage.py migrate
+```
+
+3) Run the server
+
+```shell
+python manage.py runserver
+```
+
+4) Visit your live server: `http://127.0.0.1:8000/games`
