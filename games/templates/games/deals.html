@@ -1,0 +1,34 @@
+<h1> Game list </h1>
+
+<table>
+    <thead>
+        <th>Title</th>
+        <th>Steam App Id</th>
+        <th>Sale Price</th>
+        <th>Normal Price</th>
+        <th>URL</th>
+    </thead>
+    <tbody>
+        <!-- `games` comes from `games/views.py` (function: deals) -->
+        <!-- In the return statement, we return `render` and pass {"games": data} as the 'context' -->
+        <!-- which then gets injected into the templating engine for us to play around with -->
+        {% for game in games %}
+        <tr>
+            <td>{{ game.title }}</td>
+            <td>{{ game.steamAppID }}</td>
+            <td>${{ game.salePrice }}</td>
+            <td>${{ game.normalPrice }}</td>
+            <td>
+                <!-- Reason for using rel="noopener noreferrer": https://stackoverflow.com/questions/50709625/link-with-target-blank-and-rel-noopener-noreferrer-still-vulnerable -->
+                <a
+                href="https://store.steampowered.com/app/{{ game.steamAppID }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                Visit sale
+            </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
