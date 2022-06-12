@@ -17,7 +17,8 @@ Meta y propósitos:
 - Web framework: Django
 - Database: SQLite 3
 - API: [cheapshark.com](https://apidocs.cheapshark.com/)
-- 
+
+![Architecture diagramme](https://i.ibb.co/DR68Dj8/Screen-Shot-2022-06-13-at-11-05-50-AM.png)
 
 ## Useful commands
 
